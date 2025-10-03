@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.fondo{
+    background: black;
+}
+.letra{
+    color: rgb(151, 3, 3);
+    font-size: 80px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+.fondonav{
+    
+    width: 80%;
+    background: rgb(139, 139, 225);
+    
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
