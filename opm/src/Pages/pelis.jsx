@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react"
 import Catalogo from "../componentes/Catalogo"
+import '../componentes/styles/peli' 
 
 export default function Fcatalogo() {
     const [peliculas, setPeliculas] = useState([])
-    const [busqueda, setBusqueda] = useState("") // estado para el buscador
-
+    const [busqueda, setBusqueda] = useState("") 
     useEffect(() => {
         const fetchPeliculas = async () => {
             try {
@@ -35,13 +35,7 @@ export default function Fcatalogo() {
                 placeholder="Buscar película..."
                 value={busqueda}
                 onChange={(e) => setBusqueda(e.target.value)}
-                style={{
-                    marginBottom: "20px",
-                    padding: "8px",
-                    width: "250px",
-                    borderRadius: "5px",
-                    border: "1px solid #ccc"
-                }}
+                className="busqueda-input"
             />
 
             {/* Mostrar catálogo filtrado */}

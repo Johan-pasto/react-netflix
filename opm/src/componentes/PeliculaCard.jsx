@@ -1,3 +1,4 @@
+import '../componentes/styles/PeliculaCard.css';
 const PeliculaCard = ({ peli }) => {
   return (
     <div
@@ -13,12 +14,7 @@ const PeliculaCard = ({ peli }) => {
       <img
         src={peli.imagen}
         alt={peli.titulo}
-        style={{
-          width: "100%",
-          height: "300px",
-          objectFit: "cover",
-          borderRadius: "8px",
-        }}
+        className="card-img"
       />
       <h3 style={{ marginTop: "10px" }}>{peli.titulo}</h3>
     </div>
